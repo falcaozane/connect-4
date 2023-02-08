@@ -1,6 +1,12 @@
+:root{
+    --border:chocolate;
+    --panel:burlywood;
+}
+
+
 body{
     background-color: cornflowerblue;
-    font-family: "Franklin Gothic Medium","Arial Narrow";
+    font-family: "Franklin Gothic Medium","Arial Narrow", Arial, sans-serif;
 }
 .app-container{
     width: 800px;
@@ -13,7 +19,7 @@ body{
 .panel{
     position: absolute;
     background-color: lightgoldenrodyellow;
-    border: 8px solid burlywood;
+    border: 8px solid var(--panel);
     -webkit-box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
     box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9) ;
     z-index: 1;
@@ -39,25 +45,31 @@ body{
 }
 .footer{
     left: 50%;
-    top: 750px;
+    top: 720px;
     height: 80px;
-    width: 300px;
-    margin-left: -120px;
+    width: 200px;
+    margin-left: -80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
 .footer button {
-    position: relative;
-    top: 20%;
-    left: 50%;
-    margin-left: -125px;
-    width: 250px;
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 150px;
     height: 50px;
     background-color: lightblue;
-    border: 5px solid chocolate;
-    font-size: 30px;
+    border: 5px solid var(--border) ;
+    font-size: 20px;
     font-weight: bold;
     -webkit-box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9);
     box-shadow: 3px 5px 10px 2px rgba(0,0,0,0.9) ;
 }
+
+.footer button:hover{
+    background-color: var(--border) ;
+}
+
 .gameBoard{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -69,7 +81,7 @@ body{
     margin-left:-250px;
     top:20%;
     background-color: bisque;
-    border: 8px solid burlywood;
+    border: 8px solid var(--panel) ;
     border-radius: 8%;
     -webkit-box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9);
     box-shadow: 7px 5px 15px 3px rgba(0,0,0,0.9) ;
@@ -92,5 +104,5 @@ body{
 }
 
 .player_2{
-    background-color: blue;
+    background-color: green;
 }
