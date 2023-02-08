@@ -80,6 +80,9 @@ const GameBoard = () =>{
     }
     return(
         <>
+            <div className='head-tag'>
+                <p>Made by <a href="https://falcaozane.netlify.app/">Zane Falcao</a></p>
+            </div>
             <Header gameState={gameState} currentPlayer={currentPlayer} winPlayer = {winPlayer} />
                 <div className='gameBoard'>
                     {initBoard()}

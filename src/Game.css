@@ -70,6 +70,14 @@ body{
     background-color: var(--border) ;
 }
 
+.head-tag{
+    margin-left: 300px;
+    font-size: 30px;
+}
+.head-tag p a{
+    text-decoration: none;
+}
+
 .gameBoard{
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
